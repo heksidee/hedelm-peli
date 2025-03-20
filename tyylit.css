@@ -1,0 +1,331 @@
+body {
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+header {
+    background-color: rgb(236, 191, 255);
+    text-decoration: underline;
+    text-align: center;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 300;
+    font-style: normal;
+    padding: 10px;
+}
+#varat {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px;
+    width: 60%;
+    background-color: rgb(185, 240, 130);
+    border: dashed rgb(210, 30, 78);
+    margin: 20px 20px 0px 20px;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 150;
+    font-style: normal;
+}
+#rahaa, #panokset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    margin: 7px;
+    padding: 5px 0;
+    background-color: rgb(187, 245, 245);
+    border: solid;
+}
+.kokoalue {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    box-sizing: border-box;
+    
+}
+.vaslohko, .oiklohko {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+}
+#pelialue {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 450px;
+    background-color: rgb(227, 240, 130);
+    border: dashed rgb(210, 30, 135);
+    margin: 20px;
+}
+#rulla {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#rullaobjekti, #rullaobjekti1, #rullaobjekti2, #rullaobjekti3, #rullaobjekti4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    margin: 7px;
+    padding: 5px;
+    background-color: rgb(187, 245, 245);
+    border: solid;
+    border-radius: 10%;
+}
+#rullaobjekti1Lukittu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 7px;
+    padding: 5px;
+    background-color: rgb(187, 245, 245);
+    border: solid red;
+    border-radius: 10%;
+}
+#lukitseRivi {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.lukitsePainikkeet {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 60px;
+    margin: 7px;
+    padding: 5px;
+    background-color: rgb(187, 245, 245);
+    border: solid;
+    border-radius: 10%;
+}
+
+#voitot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px;
+    width: 450px;
+    height: 100px;
+    background-color: rgb(227, 240, 130);
+    border: dashed rgb(210, 30, 135);
+    font-family: "Alfa Slab One", serif;
+    font-weight: 150;
+    font-style: normal;
+    font-size: x-large;
+}
+#voitto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 7px;
+}
+
+#pelaa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px;
+    width: 450px;
+    margin: 20px;
+    background: radial-gradient(circle, yellow, rgb(243, 114, 50));
+    border: dashed rgb(210, 30, 135);
+    font-family: "Alfa Slab One", serif;
+    font-weight: 150;
+    font-style: normal;
+    font-size: xx-large;
+    cursor: pointer;
+}
+#play {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 7px;
+}
+
+#kolikko {
+    cursor: pointer;
+    width: 80px;
+    height: auto;
+}
+.lukitsePainikkeet {
+    cursor: pointer;
+}
+
+#voittorivit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 450px;
+    background-color: rgb(185, 240, 130);
+    border: dashed rgb(210, 30, 78);
+    margin: 20px;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 150;
+    font-style: normal;
+}
+#kruunuIso, #meloni, #kirsikka, #sitruuna, #seiska, #kruunuPieni {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    background-color: rgb(185, 240, 130);
+    border: solid rgb(188, 113, 221);
+    border-radius: 5%;
+}
+
+#crown {
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+}
+#kruunuIsovoitto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    
+}
+
+@media screen and (max-width: 970px) {
+    #pelialue, #voitot, #pelaa, #voittorivit {
+        width: 350px;
+    }
+    #rullaobjekti, #rullaobjekti1, #rullaobjekti2, #rullaobjekti3, #rullaobjekti4 {
+        width: 60px;
+        height: 60px;
+    }
+    .lukitsePainikkeet {
+        width: 60px;
+        height: 40px;
+    }
+    #voitto {
+        font-size: large;
+    }
+}
+@media screen and (max-width: 768px) {
+    .oiklohko, .vaslohko {
+        margin: 3px;
+    }
+    #pelialue, #voitot, #pelaa, #voittorivit  {
+        width: 100%;
+        margin: 3px;
+    }
+    #crown {
+        height: 40px;
+        width: 40px;
+        padding: 3px;
+    }
+    #kruunuIsovoitto {
+        font-size: small;
+        margin: 3px;
+    }
+}
+@media screen and (max-width: 700px) {
+    header {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+    .oiklohko, .vaslohko {
+        margin: 3px;
+    }
+    #pelialue, #voitot, #pelaa, #voittorivit  {
+        width: 100%;
+        margin: 3px;
+    }
+    #varat {
+        width: 90%
+    }
+    #rullaobjekti, #rullaobjekti1, #rullaobjekti2, #rullaobjekti3, #rullaobjekti4 {
+        width: 40px;
+        height: 40px;
+    }
+    .lukitsePainikkeet {
+        width: 40px;
+        height: 40px;
+    }
+    #crown {
+        height: 30px;
+        width: 30px;
+        padding: 3px;
+    }
+    #kruunuIsovoitto {
+        font-size: small;
+        margin: 3px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        font-size: 1rem;
+        padding: 5px;
+    }
+    #varat {
+        width: 300px;
+        font-size: small;
+        font-weight: 100;
+    }
+    #kolikko {
+        width: 60px;
+        height: auto;
+    }
+    .kokoalue {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        margin: 10px;
+    }
+    #pelialue, #voitot, #pelaa, #voittorivit  {
+        width: 300px;
+        margin: 3px;
+    }
+    #voitot, #pelaa {
+        height: 90px;
+    }
+    #rullaobjekti, #rullaobjekti1, #rullaobjekti2, #rullaobjekti3, #rullaobjekti4 {
+        width: 50px;
+        height: 50px;
+    }
+    .lukitsePainikkeet {
+        width: 50px;
+        height: 50px;
+    }
+    #crown {
+        height: 40px;
+        width: 40px;
+        padding: 3px;
+    }
+    #kruunuIsovoitto {
+        font-size: small;
+        margin: 3px;
+    }
+}
