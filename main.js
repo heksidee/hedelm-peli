@@ -84,7 +84,6 @@ rulla.appendChild(rulla4Elementti);
 
 function pelataan() {                          /*PELAA PAINIKE*/
     var rulla = document.getElementById("rulla");
-    console.log("------> " + kierrokset + ". kierros <-------");
     rulla.innerHTML = "";
     peliRiviNollaus();
 }
@@ -111,8 +110,6 @@ function peliRiviNollaus() {                   /*PITÄÄ KIRJAA KIERROKSISTA*/
         neljäsRulla();
         voitontarkistus();
         kierrokset += 1;
-        console.log("Nostettu kierrokset 2.");
-        console.log(pelirivi);
     } else {
         if (ekaRullaEhto) {     /*JOS 2. KIERROS EIKÄ RULLAA LUKITTU - ARPOO UUDEN*/
             var rulla = document.getElementById("rulla");
@@ -123,7 +120,6 @@ function peliRiviNollaus() {                   /*PITÄÄ KIRJAA KIERROKSISTA*/
             rulla1Elementti.id = "rullaobjekti1";
             rulla.appendChild(rulla1Elementti);
             pelirivi[0] = ekaRandomNum;
-            console.log(pelirivi + " --- 1 rullan vaihto");
         }
         if (ekaRullaEhto === false) {   /*JOS 2. KIERROS JA RULLA LUKITTU - SÄILYTTÄÄ*/
             var rulla = document.getElementById("rulla");
@@ -133,7 +129,6 @@ function peliRiviNollaus() {                   /*PITÄÄ KIRJAA KIERROKSISTA*/
             rulla1Elementti.src = ekaRandomKuva;
             rulla1Elementti.id = "rullaobjekti1";
             rulla.appendChild(rulla1Elementti);
-            console.log(ekaRandomNum + ". tämä on ekan kierroksen 1 rulla");
         }
         if (tokaRullaEhto) {    /*JOS 2. KIERROS EIKÄ RULLAA LUKITTU - ARPOO UUDEN*/
             var rulla = document.getElementById("rulla");
@@ -143,8 +138,7 @@ function peliRiviNollaus() {                   /*PITÄÄ KIRJAA KIERROKSISTA*/
             rulla2Elementti.src = tokaRandomKuva;
             rulla2Elementti.id = "rullaobjekti2";
             rulla.appendChild(rulla2Elementti);
-            pelirivi[1] = tokaRandomNum;
-            console.log(pelirivi + " --- 2 rullan vaihto"); 
+            pelirivi[1] = tokaRandomNum; 
         }
         if (tokaRullaEhto === false) {    /*JOS 2. KIERROS JA RULLA LUKITTU - SÄILYTTÄÄ*/
             var rulla = document.getElementById("rulla");
@@ -154,7 +148,6 @@ function peliRiviNollaus() {                   /*PITÄÄ KIRJAA KIERROKSISTA*/
             rulla2Elementti.src = tokaRandomKuva;
             rulla2Elementti.id = "rullaobjekti2";
             rulla.appendChild(rulla2Elementti);
-            console.log(tokaRandomNum + ". tämä on ekan kierroksen 2 rulla");
         }
         if (kolmasRullaEhto) {      /*JOS 2. KIERROS EIKÄ RULLAA LUKITTU - ARPOO UUDEN*/
             var rulla = document.getElementById("rulla");
@@ -164,8 +157,7 @@ function peliRiviNollaus() {                   /*PITÄÄ KIRJAA KIERROKSISTA*/
             rulla3Elementti.src = kolmasRandomKuva;
             rulla3Elementti.id = "rullaobjekti3";
             rulla.appendChild(rulla3Elementti);
-            pelirivi[2] = kolmasRandomNum;
-            console.log(pelirivi + " --- 3 rullan vaihto"); 
+            pelirivi[2] = kolmasRandomNum; 
         }
         if (kolmasRullaEhto === false) {  /*JOS 2. KIERROS JA RULLA LUKITTU - SÄILYTTÄÄ*/
             var rulla = document.getElementById("rulla");
@@ -175,7 +167,6 @@ function peliRiviNollaus() {                   /*PITÄÄ KIRJAA KIERROKSISTA*/
             rulla3Elementti.src = kolmasRandomKuva;
             rulla3Elementti.id = "rullaobjekti3";
             rulla.appendChild(rulla3Elementti);
-            console.log(kolmasRandomNum + ". tämä on ekan kierroksen 3 rulla");
         }
         if (neljäsRullaEhto) {      /*JOS 2. KIERROS EIKÄ RULLAA LUKITTU - ARPOO UUDEN*/
             var rulla = document.getElementById("rulla");
@@ -186,7 +177,6 @@ function peliRiviNollaus() {                   /*PITÄÄ KIRJAA KIERROKSISTA*/
             rulla4Elementti.id = "rullaobjekti4";
             rulla.appendChild(rulla4Elementti);
             pelirivi[3] = neljäsRandomNum;
-            console.log(pelirivi + " --- 4 rullan vaihto"); 
         }
         if (neljäsRullaEhto === false) {  /*JOS 2. KIERROS JA RULLA LUKITTU - SÄILYTTÄÄ*/
             var rulla = document.getElementById("rulla");
@@ -196,7 +186,6 @@ function peliRiviNollaus() {                   /*PITÄÄ KIRJAA KIERROKSISTA*/
             rulla4Elementti.src = neljäsRandomKuva;           
             rulla4Elementti.id = "rullaobjekti4";
             rulla.appendChild(rulla4Elementti);
-            console.log(neljäsRandomNum + ". tämä on ekan kierroksen 4 rulla");
         }
         voitontarkistus();
         kierrokset = 1;
@@ -310,7 +299,6 @@ function ekaRulla() {
     rulla1Elementti.id = "rullaobjekti1";
     rulla.appendChild(rulla1Elementti);
     pelirivi.push(ekaRandomNum);
-    console.log(ekaRandomNum + " tämä on 1. aloitusrulla");
 }
 
 function tokaRulla() {
@@ -322,7 +310,6 @@ function tokaRulla() {
     rulla2Elementti.id = "rullaobjekti2";
     rulla.appendChild(rulla2Elementti);
     pelirivi.push(tokaRandomNum);
-    console.log(tokaRandomNum + " tämä on 2. aloitusrulla");
 }
 
 function kolmasRulla() {
@@ -334,7 +321,6 @@ function kolmasRulla() {
     rulla3Elementti.id = "rullaobjekti3";
     rulla.appendChild(rulla3Elementti);
     pelirivi.push(kolmasRandomNum);
-    console.log(kolmasRandomNum + " tämä on 3. aloitusrulla");
 
 }
 
@@ -347,9 +333,7 @@ function neljäsRulla() {
     rulla4Elementti.id = "rullaobjekti4";
     rulla.appendChild(rulla4Elementti);
     pelirivi.push(neljäsRandomNum);
-    console.log(neljäsRandomNum + " tämä on 4. aloitusrulla");
 }
-console.log(pelirivi);
 
 
                                                     /*LUODAAN LUKITSEPAINIKKEET*/
@@ -372,13 +356,11 @@ function lukitaan1() {                              /*LUKITAAN 1 RULLA*/
         return;
     }
     if (ekaRullaEhto === true) {
-        console.log("lukitaan 1 rulla");
         ekaRullaEhto = false;
         var vaihdettavaReunus = document.getElementById("rullaobjekti1");
         vaihdettavaReunus.style.border = "solid red 7px"
 
     } else {
-        console.log("poistetaan 1 rullan lukitus");
         ekaRullaEhto = true;
         var vaihdettavaReunus = document.getElementById("rullaobjekti1");
         vaihdettavaReunus.style.border = "solid"
@@ -402,12 +384,10 @@ function lukitaan2() {                        /*LUKITAAN 2 RULLA*/
         return;
     }
     if (tokaRullaEhto === true) {
-        console.log("lukitaan 2 rulla");
         tokaRullaEhto = false;
         var vaihdettavaReunus = document.getElementById("rullaobjekti2");
         vaihdettavaReunus.style.border = "solid red 7px"
     } else {
-        console.log("poistetaan 2 rullan lukitus");
         tokaRullaEhto = true;
         var vaihdettavaReunus = document.getElementById("rullaobjekti2");
         vaihdettavaReunus.style.border = "solid"
@@ -431,12 +411,10 @@ function lukitaan3() {                      /*LUKITAAN 3 RULLA*/
         return;
     }
     if (kolmasRullaEhto === true) {
-        console.log("lukitaan 3 rulla");
         kolmasRullaEhto = false;
         var vaihdettavaReunus = document.getElementById("rullaobjekti3");
         vaihdettavaReunus.style.border = "solid red 7px"
     } else {
-        console.log("poistetaan 3 rullan lukitus");
         kolmasRullaEhto = true;
         var vaihdettavaReunus = document.getElementById("rullaobjekti3");
         vaihdettavaReunus.style.border = "solid"
@@ -460,12 +438,10 @@ function lukitaan4() {                      /*LUKITAAN 4 RULLA*/
         return;
     }
     if (neljäsRullaEhto === true) {
-        console.log("lukitaan 4 rulla");
         neljäsRullaEhto = false;
         var vaihdettavaReunus = document.getElementById("rullaobjekti4");
         vaihdettavaReunus.style.border = "solid red 7px"
     } else {
-        console.log("poistetaan 4 rullan lukitus");
         neljäsRullaEhto = true;
         var vaihdettavaReunus = document.getElementById("rullaobjekti4");
         vaihdettavaReunus.style.border = "solid"
