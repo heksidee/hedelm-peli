@@ -6,6 +6,7 @@ var ekaRullaEhto = true;
 var tokaRullaEhto = true;
 var kolmasRullaEhto = true;
 var neljäsRullaEhto = true;
+
                                                     /*LUODAAN PALJONKO RAHAA KENTTÄ*/
 var rahat = document.getElementById("varat");
 var rahaElementti = document.createElement("div");
@@ -299,6 +300,7 @@ function ekaRulla() {
     rulla1Elementti.id = "rullaobjekti1";
     rulla.appendChild(rulla1Elementti);
     pelirivi.push(ekaRandomNum);
+    return ekaRandomKuva
 }
 
 function tokaRulla() {
